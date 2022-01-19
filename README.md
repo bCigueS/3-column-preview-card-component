@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [bcigues-3-column-preview](https://bcigues-3-column-preview-card-preview.netlify.app/)
 
 ## My process
 
