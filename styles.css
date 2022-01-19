@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-bg-h-b: hsl(0, 0%, 95%);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin: auto;
+}
+
+.card {
+    max-width: 350px;
+    padding: 50px;
+    color: var(--transparent-white-p);
+}
+
+.card--orange {
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.card--cyan {
+    background-color: var(--dark-cyan);
+}
+.card--deep-blue {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-light-gray-bg-h-b);
+    margin: 25px 0;
+}
+
+.card__text {
+    margin-bottom: 100px;
+    max-width: 200px;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.btn--orange {
+    color: var(--bright-orange);
+}
+
+.btn--cyan {
+    color: var(--dark-cyan);
+}
+
+.btn--deep-blue {
+    color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 50px;
+    }
+    .card {
+        min-width: 325px;
+    }
+    .card__text {
+        margin-bottom: 30px;
+        max-width: 250px;
+    }
+    .card--orange {
+        border-radius: 10px 10px 0 0;
+    }
+    .card--deep-blue {
+        border-radius: 0 0 10px 10px;
+    }
+}
